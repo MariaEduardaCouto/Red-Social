@@ -1,14 +1,12 @@
 version: '3.8'
 services:
-  php-apache-environment:
-    container_name: php-api
+  node-server:
+    container_name: node-server
     build: 
       context: .
       dockerfile: Dockerfile
     depends_on:
       - db-mysql
-    volumes:
-      - ./php/src:/var/www/html/
     ports:
       - 8000:80
   db:

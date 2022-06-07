@@ -1,0 +1,23 @@
+{
+  "name": "red-social",
+  "version": "1.0.0",
+  "description": "Trabajo de Arquitecturas y tecnologías web y multimedia - Red Social",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariaEduardaCouto/Red-Social.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MariaEduardaCouto/Red-Social/issues"
+  },
+  "homepage": "https://github.com/MariaEduardaCouto/Red-Social#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
