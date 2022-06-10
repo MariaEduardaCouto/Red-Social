@@ -1,0 +1,67 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red social</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css.css">
+</head>
+<body class="d-flex flex-column justify-content-center align-items-center">
+    <a id="head" href="/index.html" class="d-flex justify-content-center w100">
+        <p class="mt-4">Red social</p>
+    </a>
+
+    <div class="mt-4 d-flex flex-column justify-content-center w95" id="body">
+        <div class="mb-5 d-flex flex-row" id="bodyHead">
+            <a href="home.html" class="mr-2 mt-2 btn btn-primary bckOrange" id="aLogin" style="background-color:  transparent;">
+                <b>
+                    <p class="transitionTime transition orange" style="font-size: 45px;">⇐</p>
+                </b>
+            </a>
+        </div>
+
+        <div>
+            <form class="d-flex flex-column justify-content-center align-items-center" id="formAddPost">
+                
+                <div class="d-flex flex-row w75">
+                    <img src="/images/banner.png" class="w25" id="imgPost">
+
+                    <div class="d-flex flex-column justify-content-center ml-3">
+                        
+                        <span>
+                            <label for="sltTypeFile">Choose the type of file: </label>
+                            <select class="form-select" id="sltTypeFile" required>
+                                <option>image</option>
+                                <option>video</option>
+                                <option>audio</option>
+                            </select>
+                            <button class="ml-4 btn btn-primary bckOrange" id="addFile">+</button>
+                        </span>
+
+                        <input class="mt-3" type="file" name="image" id="filePhoto">
+
+                    </div>
+                </div>
+
+                <div class="mt-5 w75 d-flex flex-row">
+                    <label for="txtPostName" class="form-label">Post name:</label>
+                    <input type="text" class="ml-3 form-control w-50" id="txtPostName" required>
+                    <button type="submit" class="ml-3 btn btn-primary bckOrange">Add post</button>
+                </div>
+                
+            </form>
+        </div>
+
+        <div></div>
+        
+    </div>
+
+    <script src="/javascript/addPost.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
