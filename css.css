@@ -34,7 +34,7 @@ p {
     color: white;
 }
 
-a, #aLogin, #aRegister {
+a, button, #aLogin, #aRegister {
     border: none;
     outline: none;
     outline-width: 0px;
