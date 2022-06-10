@@ -32,7 +32,7 @@
                     <div class="d-flex flex-column justify-content-center mt-3">
                         
                         <span class="d-flex justify-content-between">
-                            <label for="sltTypeFile">Choose the type of file: </label>
+                            <label class="mt-2" for="sltTypeFile">Choose the type of file: </label>
                             <select class="form-select" id="sltTypeFile" required>
                                 <option>image</option>
                                 <option>video</option>
@@ -41,7 +41,11 @@
                             <button type="button" class="ml-4 btn btn-primary bckOrange" id="btnAddFile"> <b> + </b> </button>
                         </span>
 
-                        <span id="spanInputFile">
+                        <span class="mt-4">
+                            <button type="button" id="btnLocal" class="btn bckDarkOrange w25" style="color: white; font-size: 10px;">local</button>
+                            <button type="button" id="btnUrl" class="btn bckOrange w25" style="color: white; font-size: 10px;">url</button>
+                        </span>
+                        <span class="px-3 pb-3" id="spanInputFile" style="border-width: 1px; border-style: solid; border-color: #FFAE00;">
                             <input class="mt-3" type="file" accept="image/*" name="image" id="addFile">
                         </span>
 
@@ -51,7 +55,7 @@
                 <div class="mt-5 w75 d-flex flex-row">
                     <label for="txtPostName" class="form-label">Post name:</label>
                     <input type="text" class="ml-3 form-control w-50" id="txtPostName" required>
-                    <button type="submit" class="ml-3 btn btn-primary bckOrange">Add post</button>
+                    <button type="submit" class="ml-3 btn btn-primary bckOrange" id="btnSubmit">Add post</button>
                 </div>
                 
             </form>

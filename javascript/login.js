@@ -32,6 +32,12 @@ document.querySelector("#loginForm").addEventListener('submit', function(e) {
 function fadeInMessage(message, wasSuccessful) {
     if (opacity == 0) {
         divMessage.children[0].innerHTML = message
+
+        if (wasSuccessful) {
+            divMessage.style.backgroundColor = 'rgba(30, 135, 26, 0.199)'
+        } else {
+            divMessage.style.backgroundColor = 'rgba(208, 27, 27, 0.199)'
+        }
     }
 
     opacity += 0.05
