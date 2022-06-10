@@ -14,17 +14,17 @@
         <p class="mt-4">Red social</p>
     </a>
 
-    <form class="d-flex flex-column justify-content-center w25 row g-3 needs-validation" id="registerForm" novalidate>
+    <form action = '/userForm' class="d-flex flex-column justify-content-center w25 row g-3 needs-validation" id="registerForm" novalidate>
         <label for="txtUsername" class="form-label">Username</label>
-        <input type="text" class="form-control" id="txtUsername" required>
+        <input type="text" class="form-control" name="user" id="txtUsername" required>
 
         <label for="txtPassword" class="mt-3 form-label">Password</label>
-        <input type="password" class="form-control" id="txtPassword" required>
+        <input type="password" class="form-control" name="pass" id="txtPassword" required>
         
         <label for="txtConfirmPassword" class="mt-3 form-label">Confirm password</label>
-        <input type="password" class="form-control" id="txtConfirmPassword" required>
+        <input type="password" class="form-control" name="confirmPass" id="txtConfirmPassword" required>
 
-        <button type="submit" class="mt-2 btn btn-primary bckOrange" id="btnRegister">Register</button>
+        <input type="submit" class="mt-2 btn btn-primary bckOrange" value="Register" name="btnRegister" id="btnRegister">
     </form>
 
     <div id="divMessage" class="rounded mb-5" style="opacity: 0; position: absolute; background-color: rgba(0, 0, 0, 0.199);">

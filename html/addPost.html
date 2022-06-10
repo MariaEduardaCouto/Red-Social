@@ -24,7 +24,7 @@
         </div>
 
         <div>
-            <form class="d-flex flex-column justify-content-center align-items-center" id="formAddPost">
+            <form action="/addPost" class="d-flex flex-column justify-content-center align-items-center" id="formAddPost">
                 
                 <div class="d-flex flex-column align-items-center w75">
                     <img src="/images/image.png" class="w25" id="imgPost">
@@ -54,8 +54,8 @@
 
                 <div class="mt-5 w75 d-flex flex-row">
                     <label for="txtPostName" class="form-label">Post name:</label>
-                    <input type="text" class="ml-3 form-control w-50" id="txtPostName" required>
-                    <button type="submit" class="ml-3 btn btn-primary bckOrange" id="btnSubmit">Add post</button>
+                    <input type="text" class="ml-3 form-control w-50" name="txtPostName" id="txtPostName" required>
+                    <input type="submit" class="ml-3 btn btn-primary bckOrange" value="Add Post" id="btnSubmit">
                 </div>
                 
             </form>

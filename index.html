@@ -8,6 +8,92 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css.css">
+    <style>
+        @font-face {
+            font-family: Comfortaa;
+            src: url('./fonts/alamain1.ttf');
+        }
+        
+        @font-face {
+            font-family: Baloo;
+            src: url('./fonts/Baloo2-SemiBold.ttf');
+        }
+        
+        @font-face {
+            font-family: BalooReg;
+            src: url('./fonts/Baloo2-Regular.ttf');
+        }
+        
+        .bckOrange {
+            background-color: #FFAE00;
+        } .bckDarkOrange {
+            background-color: #FF9500;
+        } .orange {
+            color: #FFAE00;
+        } .black {
+            color: black;
+        }
+        
+        .w25 { width: 25%; }
+        .w50 { width: 50%; }
+        .w75 { width: 75%; }
+        .w95 { width: 98%; }
+        .w100 { width: 100%; }
+        
+        #head {
+            background-image: linear-gradient(#FFAE00, white)
+        }
+        
+        p {
+            font-family: Comfortaa;
+        }
+        
+        a, button, #aLogin, #aRegister {
+            border: none;
+            outline: none;
+            outline-width: 0px;
+            border-width: 0px;
+        } a:hover, #aLogin:hover, #aRegister:hover {
+            background-color: #ff9500;
+        } a:active, a:focus {
+            outline: none;
+            border: none;
+            outline-width: 0px;
+            border-width: 0px;
+        }
+        
+        /* button:disabled, button[disabled] {
+            background-color: #ff9500;
+        } */
+        
+        #head p, #goBack {
+            -moz-transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;   
+        
+            text-decoration: none;
+        } #head p:hover, #goBack:hover {
+            -moz-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+        
+        .transitionTime {
+            -moz-transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;  
+        } .transition:hover {
+            -moz-transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+        
+        #post p {
+            font-family: BalooReg;
+            font-size: 20px;
+            color: #575757;
+        }
+    </style>
 </head>
 <body class="d-flex flex-column align-items-center">
     <div id="head" class="d-flex justify-content-center w100">
