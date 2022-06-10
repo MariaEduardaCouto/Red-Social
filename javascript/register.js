@@ -36,7 +36,7 @@ document.querySelector("#registerForm").addEventListener('submit', function(e) {
                     //     messages: [
                     //         {
                     //             from: 'Lara',
-                    //             text: 'Oi',
+                    //             message: 'Oi',
                     //         },
                     //     ]
                     // },
