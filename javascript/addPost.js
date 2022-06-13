@@ -18,7 +18,7 @@ let btnAddFile = document.querySelector('#btnAddFile')
 let selectFile = document.querySelector('#sltTypeFile')
 let imgPost = document.querySelector('#imgPost')
 let btnSubmit = document.querySelector('#btnSubmit')
-btnSubmit.disabled = true
+// btnSubmit.disabled = true
 
 document.querySelector('#btnUrl').addEventListener('click', function() {
     document.querySelector('#spanInputFile').innerHTML = `
@@ -32,11 +32,11 @@ document.querySelector('#btnLocal').addEventListener('click', function() {
     `
 })
 
-if (document.querySelector('#addFile').value == '') {
-    btnAddFile.disabled = true
-} else {
-    btnAddFile.disabled = false
-}
+// if (document.querySelector('#addFile').value == '') {
+//     btnAddFile.disabled = true
+// } else {
+//     btnAddFile.disabled = false
+// }
 
 selectFile.addEventListener('change', function() {
     document.querySelector('#spanInputFile').innerHTML = `
@@ -48,11 +48,11 @@ selectFile.addEventListener('change', function() {
     displayedFile.src = `/images/${selectFile.value}.png`
 })
 
-document.querySelector('#addFile').addEventListener('change', function() {    
-    btnAddFile.disabled = false
+// document.querySelector('#addFile').addEventListener('change', function() {    
+//     btnAddFile.disabled = false
 
-    imgPost.src = addFile.value
-})
+//     imgPost.src = addFile.value
+// })
 
 btnAddFile.addEventListener('click', function() {
     clicks += 1
@@ -68,17 +68,19 @@ btnAddFile.addEventListener('click', function() {
     btnSubmit.disabled = false
 })
 
-document.querySelector('#formAddPost').addEventListener('submit', function() {
+document.querySelector('#formAddPost').addEventListener('submit', function(e) {
+    e.preventDefault();
+
     clicks = 0
-    alert('a')
     
     const username = sessionStorage.getItem('loggedUser')
     let postName = document.querySelector('#txtPostName').value
+    urlFile = document.querySelector('#filePhoto').value
 
     let post = {
         user: username,
         post: postName,
-        files: [],
+        files: urlFile,
     }
 
     posts.push(post)
@@ -86,12 +88,11 @@ document.querySelector('#formAddPost').addEventListener('submit', function() {
 
     post = {
         post: postName,
-        files: [],
+        files: urlFile,
     }
 
     for (const user of users) {
         if (user.username == username) {
-            alert(post)
             user.posts.push(post)
 
             localStorage.setItem('users', JSON.stringify(users));

@@ -20,18 +20,23 @@
             <a href="editProfile.html" class="mx-2 mt-2 btn btn-primary bckOrange w25" id="aLogin">Edit profile</a>
             <a href="messages.html" class="mt-2 btn btn-primary bckOrange w25" id="aLogin">Chat</a>
         </div>
-
-        <div class="p-5 rounded d-flex flex-column justify-content-center align-items-center" id="divPosts" style="border-width: 2px; border-style: inset;">
-                <!-- <div class="py-3 w100 d-flex justify-content-between" id="post">
-                    <button class="btn btn-primary bckOrange">﹤</button>
-                    <button class="btn btn-primary bckOrange">﹥</button>
-                    
-                </div> -->
-        </div>
-        
     </div>
 
-    <script src="/javascript/home.js"></script>
+    <form class="d-flex flex-column justify-content-center align-items-center" id="formEdit">
+                
+        <div class="d-flex flex-column align-items-center w75">
+            <label for="txtName" class="form-label">Username:</label>
+            <input type="text" class="ml-3 form-control w-50" name="txtPostName" id="txtName" required>
+                
+            <label for="txtPass" class="form-label">Password:</label>
+            <input type="password" class="ml-3 form-control w-50" name="txtPostName" id="txtPass" required>
+
+            <input type="submit" class="ml-3 btn btn-primary bckOrange" value="Change profile" id="btnSubmit">
+        </div>
+        
+    </form>
+
+    <script src="/javascript/editProfile.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

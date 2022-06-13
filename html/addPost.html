@@ -24,7 +24,7 @@
         </div>
 
         <div>
-            <form action="/addPost" class="d-flex flex-column justify-content-center align-items-center" id="formAddPost">
+            <form class="d-flex flex-column justify-content-center align-items-center" id="formAddPost">
                 
                 <div class="d-flex flex-column align-items-center w75">
                     <img src="/images/image.png" class="w25" id="imgPost">
@@ -38,15 +38,15 @@
                                 <option>video</option>
                                 <option>audio</option>
                             </select>
-                            <button type="button" class="ml-4 btn btn-primary bckOrange" id="btnAddFile"> <b> + </b> </button>
+                            <button type="button" class="ml-4 btn btn-primary bckOrange" id="btnAddFile" style="visibility: hidden;"> <b> + </b> </button>
                         </span>
 
                         <span class="mt-4">
                             <button type="button" id="btnLocal" class="btn bckDarkOrange w25" style="color: white; font-size: 10px;">local</button>
-                            <button type="button" id="btnUrl" class="btn bckOrange w25" style="color: white; font-size: 10px;">url</button>
+                            <button type="button" id="btnUrl" class="btn bckOrange w25" style="color: white; font-size: 10px; visibility: hidden;">url</button>
                         </span>
                         <span class="px-3 pb-3" id="spanInputFile" style="border-width: 1px; border-style: solid; border-color: #FFAE00;">
-                            <input class="mt-3" type="file" accept="image/*" name="image" id="addFile">
+                            <input class="mt-3" type="file" accept="image/*" name="image" id="filePhoto">
                         </span>
 
                     </div>
